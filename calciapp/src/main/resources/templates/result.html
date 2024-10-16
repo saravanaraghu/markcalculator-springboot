@@ -1,0 +1,18 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap.min.css"
+        th:href="@{/webjars/bootstrap/2.3.0/css/bootstrap.min.css}" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <title>Title</title>
+</head>
+<body>
+<h1>Result</h1>
+<p th:text="${student.getTotal()}"></p>
+<p th:text="${student.getAvg()}"></p>
+<p th:text="${student.getResult()}"></p>
+
+</body>
+</html>
